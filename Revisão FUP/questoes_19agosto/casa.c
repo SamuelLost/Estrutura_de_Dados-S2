@@ -50,6 +50,6 @@ int main() {
     lerCasa(a, b);
     imprimir(a, b);
     free(a);
-    free(b);
+    free(b); //Liberar memoria
     return 0;
 }
