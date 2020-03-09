@@ -1,0 +1,71 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include "listaCirc.h" 
+
+struct lista_circ {
+   int info;
+   ListaCirc *prox;
+};
+
+
+/* Cria uma lista circular vazia.*/
+ListaCirc* lst_circ_cria(){
+   return NULL;
+}
+
+/* Testa se uma lista circular é vazia.*/
+int lst_circ_vazia(ListaCirc *l){
+   return (l==NULL);
+}
+
+/* Insere um elemento em uma lista circular.*/
+ListaCirc* lst_circ_insere(ListaCirc *l, int info){
+    ListaCirc* ln = (ListaCirc*)malloc(sizeof(ListaCirc));
+    ln->info = info;
+    if(l==NULL)
+      ln->prox = ln;
+    else{
+      ln->prox = l->prox;
+      l->prox = ln;
+     }
+   return ln;
+}
+
+/* Remove um elemento de uma lista circular.*/
+ListaCirc* lst_circ_remove(ListaCirc *l, int info){
+
+}
+
+/* Busca um elemento em uma lista circular.*/
+ListaCirc* lst_circ_busca(ListaCirc *l, int info){
+}
+
+/* Imprime uma lista circular.*/
+void lst_circ_imprime(ListaCirc *l){
+ if(l!=NULL){
+   ListaCirc* lAux = l;
+   printf("Lista de Elementos \n");
+   do{
+      printf("Info = %d\n",lAux->info);
+      lAux = lAux->prox;
+   }while(l!=lAux);
+ }
+}
+
+/* Libera o espaço alocado por uma lista circular .*/
+void lst_circ_libera(ListaCirc *l){
+}
+/* IMPLEMENTE a função que conta o número de ocorrências de um elemento em uma lista circular.*/
+int lst_circ_conta(ListaCirc *l, int info){
+    ListaCirc *aux = l;
+    int count=0;
+    if(aux!=NULL){
+        do{
+            if(info==aux->info){
+                count++;
+            }
+            aux = aux->prox;
+        }while(l!=aux);
+    }
+    return count;
+}

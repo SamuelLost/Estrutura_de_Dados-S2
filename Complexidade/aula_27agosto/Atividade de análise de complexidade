@@ -1,0 +1,129 @@
+	1)Considere dois programas A e B com tempos de execução 100n2 e 5n, respectivamente, qual é o mais eficiente ?
+
+	 
+
+	2) Considere dois algoritmos A e B com complexidades 8n2 e n3, respectivamente, qual é o mais eficiente ? Qual é o maior valor de n, para o qual o algoritmo B é mais eficiente que o algoritmo A ?
+
+	 
+
+	3) Determine a Complexidade do pior caso dos algoritmos a seguir
+
+	- Algoritmo 1 - Algoritmo que encontra quantas vezes é possível dividir um número por dois
+
+	Função G(n)
+
+	K<- 0
+
+	Enquanton> 0 Faça
+
+	n <-n/2
+
+	k <- k+1
+
+	Retorne k
+
+	 
+
+	- Algoritmo 2 - Algorimo que atualiza um valor de uma variável com o conteúdo de outra
+
+	intFibIter(int n){
+
+	inti = 1, k, F = 0;
+
+	for(k = 1; k <= n; k++) {
+
+	F+= i;
+
+	i = F - i ;
+
+	}
+
+	return F;
+
+	}
+
+	 
+
+	- Algoritmo 3 - Este é um algoritmo que recebe um vetor e encontra seu valor máximo e seu valor minimo
+
+	MaxMin(vetor v, inteiro n) 
+
+	max=v[1];
+
+	min=v[1];
+	para i=2 até n faça 
+
+	se v[i]> max então max=v[i]; fimse 
+
+	se v[i]< min então min=v[i]; fimse fimpara; 
+
+	fim.
+
+	- Algoritmo 3 - Este é um algoritmo que recebe um vetor de gabarito, uma matriz com as repostas dos 10 alunos e quantidade de respostas (n) e retorna quantos foram aprovados
+
+	int func(char vet[], char mat[10][], n)
+
+	int i, j, nota, qtd_aprovados = 0;
+
+
+	for(i=0;i<10; i++){
+
+	nota =0;
+
+	for(j=0;j<n; j++)
+
+	if(mat[i][j] == vet[j]) nota++;
+
+	if(nota>=7) qtd_aprovados++;
+
+	}
+
+
+	return (qtd_aprovados);
+
+	}
+
+	4 - Verifique se as funções abaixo são O(n): 
+
+	a)f(n) = n 
+
+	b)f(n) = 1045n
+
+	c)f(n)=n2 +70 
+
+	d)f(n)=7n+3 
+
+	e)f(n) = Cn + D , onde C, D são constantes 
+
+	f)f(n) = 8 
+
+	g)f(n) = n3 + n + 1 
+
+	5 - Obter o valor de O para as expressões de complexidade: 
+
+	a)f(n)=3n3+n 
+
+	b)f(n) = 3n2 + 5n + 4 
+
+	c)f(n) = 3n3 + n2 + 5n + 99 
+
+	MINHAS RESPOSTAS: 
+	Questão 1: O algoritmo mais eficiente é o B, pois possui ordem linear (1º grau), 5n, enquanto o algoritmo A possui uma ordem quadrática, 100n². Portanto, o algoritmo A dará a resposta mais rapidamente que o B, sendo mais eficaz.
+
+	Questão 2: O algoritmo A é mais eficiente, pois apresenta uma ordem menor do que o algoritmo B, e em tamanhos maiores ele se comporta melhor que o B. Para tamanhos menores do que 8 o algoritmo B é mais eficiente que o A, por outro lado o algoritmo A se torna mais eficiente que o B em tamanhos maiores do que 8.
+
+	Questão 3: Algoritmo 1: 3log2  n + 2 (contando condições e incremento do for)
+
+	Algoritmo 2: 4n + 4 (contando condições e incremento do for)
+
+	Algoritmo 3: 4n + 1 (contando condições e incremento do for)
+
+	Algoritmo 4: 90n + 7 (contando condições e incremento do for)
+
+	Questão 4: As funções que são O(n): intens a), b), c), d), e) e g). O item f) não é O(n), pois é um constante.
+
+	Questão 5: a) Apresenta complexidade cúbica de O(n³).
+
+	b) Apresenta complexidade quadrática de O(n²).
+
+	c) Apresenta complexidade cúbica de O(n³). 

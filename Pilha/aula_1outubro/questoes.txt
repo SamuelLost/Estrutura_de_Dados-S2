@@ -1,0 +1,13 @@
+1. O reverso de um número natural é outro natural obtido pela inversão de seus dı́gitos.
+Por exemplo, o reverso de 54132 é 23145. Escreva algoritmo que receba um natural e,
+utilizando uma pilha, retorne ser reverso.
+
+
+2. Um palı́ndromo é uma string cuja ordem reversa de caracteres revela a pró pria string de
+base. Por exemplo, ana e radar são exemplos de palı́ndromos. Utilizando uma pilha
+construa uma função que verifique se uma string de entrada é ou não um palı́ndromo.
+Receber um parâmetro char s[] e faça comparações com \0 para percorer o vetor de string
+até o final.
+
+3. Crie um programa que receba um número na base 10 e converta para a base 2 usando
+pilha.
